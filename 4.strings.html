@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Javascript second example..</title>
+    <style>
+        h1 {
+            background-color: lightgray;
+            color: red;
+            text-align: center;
+        }
+    </style>
+    <script>
+        function fun1() {
+            var name = 'computer'
+            var model = "dell latitute"
+            var model1 = "dell latitute"
+            console.log("equality : "  + (model == model1))
+            console.log('length: '+ model.length)
+
+            var model2 = new String('dell latitute')
+            console.log('model1 and model2 equal? '+ (model1 == model2))
+            console.log('model1 and model2 equal? '+ (model1 === model2))       //objects are different
+
+            //indexOf()
+            console.log("indexof example: " + model.indexOf('latitute'));
+
+            var model = "dell latitute from dell inc."
+            //lastIndexOf()
+            console.log("lastIndexOf example: " + model.lastIndexOf('dell'));
+
+            //search
+            var model = "dell latitute from dell inc. latitute are best laptop to use"
+            console.log("search example: " + (model.search('latitute')));
+
+            //extracting part of string slice, substring, substr
+            var model = "dell latitute from dell inc. latitute are best laptop to use"
+            console.log('slice example...')
+            console.log(model.slice(5, 10));
+            console.log(model.slice(5));
+            var len = model.length
+            console.log(len)
+            console.log(model.slice(-15, -5));  //If a parameter is negative, the position is counted from the end of the string.
+            console.log(model.slice(-5));  //If a parameter is negative, the position is counted from the end of the string.
+
+            //substring
+            //similar to slice except doesnot accept negative values
+
+            //substr
+            //similar to slice except second parameter is count of characters and not end position
+            //it accepts negative values also
+
+            //replace string
+            var model = "dell latitute from dell inc. latitute are best laptop to use"
+            var newModel = model.replace('dell', 'hp')
+            console.log(newModel);
+
+            var model = "Dell latitute from dell inc. latitute are best laptop to use"
+            var newModel = model.replace(/dell/i, 'hp')
+            console.log(newModel);
+
+            var model = "Dell latitute from Dell inc. latitute are best laptop to use"
+            var newModel = model.replace(/Dell/g, 'hp')
+            console.log(newModel);
+
+
+            //touppercase and tolowercase
+            var model = "Dell latitute from Dell inc. latitute are best laptop to use"
+            console.log(model.toLocaleLowerCase())
+            console.log(model.toUpperCase())
+
+            //concat
+            var manf = 'dell'
+            var model = ' latitute'
+            console.log(manf.concat(model))
+
+            //trim()
+            //charAt()
+            //charCodeAt()
+
+            //convert into array
+            var name = 'dmjadhav';
+            var arr = name.split('')
+            console.log(arr)
+
+        }
+    </script>
+</head>
+
+<body>
+    <h1 id="heading">This is second javascript example..</h1>
+    <hr>
+    <button onclick="fun1()">Console output</button> <br>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Javascript second example..</title>
+    <style>
+        h1 {
+            background-color: lightgray;
+            color: red;
+            text-align: center;
+        }
+    </style>
+    <script>
+        function fun1() {
+            var num = 10;
+            var name = 'dmjadhav'
+            var per = 64.33;
+            var emp = {name: "dmjadhav", address:"pune", phone: "90110"};       //object
+            var isWorking = true;
+            var skills = ['java', 'javascript', 'angular']
+            var mobile
+            var email = ""          //empty value
+            console.log('number: '+ num)
+            console.log('name: '+ name)
+            console.log('percentage: '+ per)
+            console.log('emp object: ')
+            console.log(emp) 
+            console.log('currently working or not? '+ isWorking)
+            num = 'Cybage, pune'
+            console.log('organization name' + num);
+            console.log('skills: '+ skills)
+            console.log('mobile number is : '+ mobile)
+            console.log('email: '+ email)
+            //You can use the JavaScript typeof operator to find the type of a JavaScript variable.
+            console.log('type of emp is : ')
+            console.log(typeof emp)
+
+            //object can be make empty using null
+            emp = null;
+            console.log('updated object')
+            console.log(emp)
+
+            //possible using undefined also
+            emp = undefined
+            console.log('updated object')
+            console.log(emp)
+
+
+        }
+    </script>
+</head>
+
+<body>
+    <h1 id="heading">This is second javascript example..</h1>
+    <hr>
+    <button onclick="fun1()">Console output</button> <br>
+</body>
+</html>

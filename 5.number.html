@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Javascript second example..</title>
+    <style>
+        h1 {
+            background-color: lightgray;
+            color: red;
+            text-align: center;
+        }
+    </style>
+    <script>
+        function fun1() {
+           var empid = 21604
+           var roi = 8.45
+
+           console.log('empid '+ empid)
+           console.log('Rate of interest is: '+ roi)
+
+           //use of exponent
+           var population = 125e9;
+           var gdp = 5.45e10;
+           console.log('population : '+ population)
+           console.log('gdp: '+ gdp)
+
+           //NaN --> not a number
+           var div = 100/'abc'
+           console.log('division is:'+ div)
+
+           //infinity
+           var div = 10/0;
+           var div1 = -10/0;
+           console.log('positive infinity: '+ div)
+           console.log('negative infinity: '+ div1)
+
+           //convert number into string
+           var num = 1234;
+           var numString = num.toString()
+           console.log('length: '+ numString.length)
+
+           //toExponential()
+           var num = 12345;
+           console.log(num.toExponential(2))
+           console.log(num.toExponential(4))
+           console.log(num.toExponential(5))
+           console.log(num.toExponential(0))
+           
+           //tofixed()
+           var num = 10.234;
+           console.log(num.toFixed(0))
+           console.log(num.toFixed(2))
+           console.log(num.toFixed(3))
+           console.log(num.toFixed(4))
+
+        }
+    </script>
+</head>
+
+<body>
+    <h1 id="heading">This is second javascript example..</h1>
+    <hr>
+    <button onclick="fun1()">Console output</button> <br>
+</body>
+</html>
