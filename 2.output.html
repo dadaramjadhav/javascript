@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Javascript second example..</title>
+    <style>
+        h1 {
+            background-color: lightgray;
+            color: red;
+            text-align: center;
+        }
+    </style>
+     
+ <script>
+        function fun1() {
+            console.log('button clicked...');
+        }
+        function fun2() {
+            document.getElementById("heading").innerHTML = "updated contents in h1 tag..."
+        }
+        function fun3() {
+            // alert('just a alert :)');
+            window.alert('just a alert :)')
+            console.log('button clicked...')    
+        }
+        function fun4(){
+            //it deletes all contents
+            document.write('it is using document.write... which erase all contents')
+        }
+    </script>  
+
+     
+</head>
+
+<body>
+    <h1 id="heading">This is second javascript example..</h1>
+    <hr>
+    <button onclick="fun1()">Console output</button> <br>
+    <button onclick="fun2()">using innerHTML</button> <br>
+    <button onclick="fun3()">Output using alert</button> <br>
+    <button onclick="fun4()">Output using document.write</button> <br>
+
+
+     
+</body>
+
+</html>
